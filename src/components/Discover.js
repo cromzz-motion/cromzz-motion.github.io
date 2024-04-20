@@ -48,8 +48,8 @@ const features = [
 
 const Title = () => (
   <div class="flex flex-col">
-    <p class="font-primary text-6xl font-light">Discover Cromzz</p>
-    <p class="font-primary text-base">
+    <p class="font-primary text-2xl lg:text-6xl font-light">Discover Cromzz</p>
+    <p class="text-font-lighter text-base">
       Say hello to precision, goodbye to guesswork!
     </p>
   </div>
@@ -59,14 +59,14 @@ const Discover = () => {
   return (
     <div
       id="about-us"
-      class="flex flex-col relative align-center justify-center text-center w-full px-10 md:px-20 py-10 gap-16 bg-radial overflow-hidden"
+      class="flex flex-col relative align-center justify-center text-center w-full md:px-20 py-28 gap-16 bg-radial overflow-hidden"
     >
       <Title />
       <div class="w-full flex flex-row justify-center align-center">
         <div class="flex flex-col lg:flex-row gap-10 max-w-[1000px]">
           <div class="flex flex-col w-full lg:w-1/3 gap-4 text-left">
-            <p class="font-primary text-[2rem]">Designed for You</p>
-            <p class="font-primary text-base font-bold">
+            <p class="font-primary text-lg lg:text-[2rem]">Designed for You</p>
+            <p class="text-font-lighter text-base font-bold">
               Cohere’s Command lets you build powerful chatbots and knowledge
               assistants. Command uses RAG (Retrieval Augmented Generation) to
               deliver accurate conversations grounded by your enterprise data.
@@ -90,7 +90,7 @@ const Discover = () => {
             {features.map((feature) => (
               <div class="flex flex-row gap-4">
                 <img src={feature.icon} class="h-4 w-auto" alt="Feature" />
-                <p class="font-primary text-sm md:text-base font-bold whitespace-nowrap">
+                <p class="text-font-lighter  text-sm md:text-base font-bold whitespace-nowrap">
                   {feature.text}
                 </p>
               </div>
@@ -129,7 +129,7 @@ const Discover = () => {
           }
         />
       </div>
-      <p class="font-primary text-base text-light tracking-[0.25rem]">
+      <p class="text-font-lighter text-base text-light tracking-[0.25rem]">
         Wearable on your hands and shoes for comfort and performance
       </p>
     </div>

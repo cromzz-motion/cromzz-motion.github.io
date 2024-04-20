@@ -9,9 +9,11 @@ function App() {
   return (
     <div className="App" class="bg-background-main">
       <Hero />
-      <Discover />
-      <Evolution />
-      <Contact />
+      <div class="px-10 lg:px-4">
+        <Discover />
+        <Evolution />
+        <Contact />
+      </div>
       <svg
         style={{ visibility: 'hidden', position: 'absolute' }}
         width="0"

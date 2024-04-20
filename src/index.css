@@ -24,13 +24,14 @@ code {
 
 .cut-right {
   width: 80%;
-  clip-path: polygon(0 0, calc(100% - 3vh) 0, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 0, calc(100% - 3vh) 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 3vh) 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 3vh) 100%, 0 100%);
+  border-radius: 0 0.5rem 0.5rem 0;
   margin-right: -0.5rem;
 }
 .cut-left {
   width: 20%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 3vh) 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 3vh) 100%);
+  clip-path: polygon(calc(0% + 3vh) 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(calc(0% + 3vh) 0, 100% 0, 100% 100%, 0 100%);
   margin-left: -0.5rem;
 }
