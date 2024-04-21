@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from './Button'
 import arrowRightWhite from '../assets/img/icons/arrow-right-white.png'
 
 const Card = ({ image, header, title, description }) => {
@@ -18,6 +18,12 @@ const Card = ({ image, header, title, description }) => {
         <p class="text-sm lg:text-base font-bold max-w-[350px]">
           {description}
         </p>
+        <Button
+          text="Waiting list"
+          styles={
+            'bg-[#070421] transparent text-sm text-[#FAFAFA] text-left font-bold py-2 pl-4 rounded'
+          }
+        />
         <div class="flex flex-row w-full">
           <button class="bg-[#070421] transparent text-sm text-[#FAFAFA] text-left font-bold py-2 pl-4 rounded cut-right">
             Waiting list

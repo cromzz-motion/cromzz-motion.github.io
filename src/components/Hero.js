@@ -2,15 +2,19 @@ import Header from './Header'
 import DeviceCanvas from './DeviceCanvas'
 
 import cromzz from '../assets/img/cromzz.png'
+import device from '../assets/img/device-image.png'
 
 const Hero = () => (
   <>
     <Header />
     <div
       id="home"
-      class="bg-hero relative w-full h-[100vh] bg-cover bg-center bg-no-repeat flex align-center justify-center"
+      class="bg-hero relative w-full h-[100vh] bg-cover bg-center bg-no-repeat flex items-center  justify-center"
     >
-      <DeviceCanvas />
+      <img
+        src={device}
+        class="rotate-45 object-contain w-[200] lg:w-[350px] xl:w-[500px] h-[200px] lg:h-[350px] xl:h-[500px]"
+      />
       <div class="absolute flex items-center right-[1rem] py-4 h-full">
         <img src={cromzz} class="h-3/4 md:h-full" />
       </div>

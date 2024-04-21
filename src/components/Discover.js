@@ -47,7 +47,7 @@ const features = [
 ]
 
 const Title = () => (
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-4">
     <p class="font-primary text-2xl lg:text-6xl font-light">Discover Cromzz</p>
     <p class="text-font-lighter text-base">
       Say hello to precision, goodbye to guesswork!
