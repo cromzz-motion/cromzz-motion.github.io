@@ -11,10 +11,7 @@ const Hero = () => (
       id="home"
       class="bg-hero relative w-full h-[100vh] bg-cover bg-center bg-no-repeat flex items-center  justify-center"
     >
-      <img
-        src={device}
-        class="rotate-45 object-contain w-[200] lg:w-[350px] xl:w-[500px] h-[200px] lg:h-[350px] xl:h-[500px]"
-      />
+      <DeviceCanvas />
       <div class="absolute flex items-center right-[1rem] py-4 h-full">
         <img src={cromzz} class="h-3/4 md:h-full" />
       </div>
