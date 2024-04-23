@@ -13,7 +13,9 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('./assets/img/hero.png')",
-        radial: 'radial-gradient(#4D3589, #210940 40%)'
+        radial: 'radial-gradient(#4D3589, #210940 40%)',
+        'top-card': "url('./assets/img/top-card-bg.png')",
+        'bottom-card': "url('./assets/img/bottom-card-bg.png')"
       }
     }
   },

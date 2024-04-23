@@ -18,44 +18,86 @@ const Evolution = () => {
           gains and unstoppable progress
         </p>
       </div>
-      <div class="flex flex-col md:flex-row justify-center max-w-[1000px] gap-10 md:gap-2.5">
+      <div class="flex flex-col md:flex-row justify-center max-w-[1000px] -gap-2 md:gap-2.5">
         <div class="flex flex-col">
-          <EvolutionCard
-            cardType={'card-top'}
-            icon={arrowUp}
-            title={'Evolution'}
-            description={
-              'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-            }
-          />
-          <EvolutionCard
-            cardType={'card-bottom'}
-            icon={endurance}
-            title={'Endurance'}
-            description={
-              'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-            }
-            extraClasses={'-mt-14'}
-          />
+          <div
+            class={`bg-top-card bg-contain bg-center bg-no-repeat flex flex-col justify-start w-full max-w-[500px] min-h-[200px] lg:min-h-[300px] px-4 pb-2 pt-8 gap-2`}
+          >
+            <div class="flex flex-row gap-4">
+              <img
+                src={arrowUp}
+                alt="Evolution icon"
+                class="object-contain size-5 sm:size-auto"
+              />
+              <p class="text-lg lg:text-[2rem] font-bold color-[#070421]">
+                {'Evolution'}
+              </p>
+            </div>
+            <p class="text-xs lg:text-xl font-light color-[#070421]">
+              {
+                'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+              }
+            </p>
+          </div>
+          <div
+            class={`bg-bottom-card bg-contain bg-center bg-no-repeat flex flex-col justify-center w-full max-w-[500px] min-h-[200px] lg:min-h-[300px] px-4 pb-2 pt-6 gap-2 -mt-[3rem]`}
+          >
+            <div class="flex flex-row gap-4">
+              <img
+                src={endurance}
+                alt="Evolution icon"
+                class="object-contain size-5 sm:size-auto"
+              />
+              <p class="text-lg lg:text-[2rem] font-bold color-[#070421]">
+                {'Endurance'}
+              </p>
+            </div>
+            <p class="text-xs lg:text-xl font-light color-[#070421]">
+              {
+                'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+              }
+            </p>
+          </div>
         </div>
         <div class="flex flex-col">
-          <EvolutionCard
-            cardType={'card-top'}
-            icon={smoothness}
-            title={'Smoothness'}
-            description={
-              'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-            }
-          />
-          <EvolutionCard
-            cardType={'card-bottom'}
-            icon={control}
-            title={'Control'}
-            extraClasses={'-mt-14'}
-            description={
-              'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-            }
-          />
+          <div
+            class={`bg-top-card bg-contain bg-center bg-no-repeat flex flex-col justify-start w-full max-w-[500px] min-h-[200px] lg:min-h-[300px] px-4 pb-2 pt-8 gap-2`}
+          >
+            <div class="flex flex-row gap-4">
+              <img
+                src={smoothness}
+                alt="Evolution icon"
+                class="object-contain size-5 sm:size-auto"
+              />
+              <p class="text-lg lg:text-[2rem] font-bold color-[#070421]">
+                {'Smoothness'}
+              </p>
+            </div>
+            <p class="text-xs lg:text-xl font-light color-[#070421]">
+              {
+                'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+              }
+            </p>
+          </div>
+          <div
+            class={`bg-bottom-card bg-contain bg-center bg-no-repeat flex flex-col justify-center w-full max-w-[500px] min-h-[200px] lg:min-h-[300px] px-4 pb-2 pt-6 gap-2 -mt-[3rem]`}
+          >
+            <div class="flex flex-row gap-4">
+              <img
+                src={control}
+                alt="Evolution icon"
+                class="object-contain size-5 sm:size-auto"
+              />
+              <p class="text-lg lg:text-[2rem] font-bold color-[#070421]">
+                {'Control'}
+              </p>
+            </div>
+            <p class="text-xs lg:text-xl font-light color-[#070421]">
+              {
+                'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+              }
+            </p>
+          </div>
         </div>
       </div>
     </div>
