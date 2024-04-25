@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App" class="bg-background-main">
       <Hero />
-      <div class="px-10 lg:px-4">
+      <div class="px-4">
         <Discover />
         <Evolution />
         <Contact />

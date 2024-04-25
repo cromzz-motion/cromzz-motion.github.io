@@ -26,7 +26,7 @@ const Scene = () => {
         object={device.scene}
         position={[-2, 0, 0.5]}
         scale={[0.1, 0.1, 0.1]}
-        rotation={[Math.PI / 6, 0, -Math.PI / 6]}
+        rotation={[Math.PI / 12, 0, -Math.PI / 6]}
       />
 
       {/* Directional light */}
@@ -39,6 +39,13 @@ const Scene = () => {
 
       <directionalLight
         position={[0, -10, 0]}
+        intensity={2}
+        color={'#F4FDFF'}
+        castShadow={true}
+      />
+
+      <directionalLight
+        position={[5, 5, 100]}
         intensity={2}
         color={'#F4FDFF'}
         castShadow={true}

@@ -8,8 +8,8 @@ import endurance from '../assets/img/icons/endurance.png'
 const Evolution = () => {
   return (
     <div class="flex flex-col w-full items-center justify-center gap-16 py-10">
-      <div class="flex flex-col max-w-[490px] lg:max-w-[1000px] gap-10">
-        <p class="font-primary  text-2xl text-center lg:text-3xl lg:text-[42px] font-light tracking-[0.25rem] lg:leading-10">
+      <div class="flex flex-col max-w-[490px] lg:max-w-[1000px] gap-10 px-6">
+        <p class="font-primary  text-2xl tracking-[4px] text-center lg:text-[42px] lg:tracking-[7px] font-light tracking-[0.25rem] lg:leading-10">
           Cromzz evolves with YOU
         </p>
         <p class="text-font-lighter text-lg lg:text-2xl	font-light tracking-[0.25rem]">
@@ -34,9 +34,7 @@ const Evolution = () => {
                 </p>
               </div>
               <p class="text-xs lg:text-xl font-light color-[#070421]">
-                {
-                  'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-                }
+                {`Evolution compares your current and past performances to indicate the progress you've made. This feedback is designed to help you recognize when it's time for a change in your training routine, preventing plateaus.`}
               </p>
             </div>
           </div>
@@ -56,7 +54,7 @@ const Evolution = () => {
               </div>
               <p class="text-xs lg:text-xl font-light color-[#070421]">
                 {
-                  'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+                  'Endurance is about the consistency of your execution speed across repetitions. This metric helps you to identify the right number of repetitions to increase endurance while maintaining proper form.'
                 }
               </p>
             </div>
@@ -79,7 +77,7 @@ const Evolution = () => {
               </div>
               <p class="text-xs lg:text-xl font-light color-[#070421]">
                 {
-                  'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
+                  'Smoothness measures how precise you perform an exercise. Higher weights lead to more noticeable shaking. This metric helps determine the right weight for your exercises.'
                 }
               </p>
             </div>
@@ -99,9 +97,7 @@ const Evolution = () => {
                 </p>
               </div>
               <p class="text-xs lg:text-xl font-light color-[#070421]">
-                {
-                  'Cohere offers sophisticated customization (fine-tuning) tools and capabilities that give superior model performance at industry-leading inference cost'
-                }
+                {`Control refers to how well you can keep a consistent rhythm between reps. This metric is supported by the device's vibration, helping you select the desired timing based on your goal.`}
               </p>
             </div>
           </div>

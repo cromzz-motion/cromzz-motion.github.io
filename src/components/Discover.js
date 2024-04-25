@@ -11,9 +11,11 @@ import personalTrainer from '../assets/img/icons/personal-trainer.png'
 import vibration from '../assets/img/icons/vibration.png'
 import arrowRightBlack from '../assets/img/icons/arrow-right-black.png'
 import Card from './Card'
+import Button from './Button'
 
 import training1 from '../assets/img/training-1.png'
 import training2 from '../assets/img/training-2.png'
+import elipse from '../assets/img/elipse-1.png'
 
 const features = [
   {
@@ -48,8 +50,10 @@ const features = [
 
 const Title = () => (
   <div class="flex flex-col gap-4">
-    <p class="font-primary text-2xl lg:text-6xl font-light">Discover Cromzz</p>
-    <p class="text-font-lighter text-base">
+    <p class="font-primary text-2xl lg:text-6xl font-light tracking-[4px] lg:tracking-[10.5px]">
+      Discover Cromzz
+    </p>
+    <p class="text-font-lighter text-base tracking-[3.35px]">
       Say hello to precision, goodbye to guesswork!
     </p>
   </div>
@@ -59,17 +63,19 @@ const Discover = () => {
   return (
     <div
       id="about-us"
-      class="flex flex-col relative align-center justify-center text-center w-full md:px-20 py-28 gap-16 bg-radial overflow-hidden"
+      class="flex flex-col relative align-center justify-center text-center w-full md:px-20 py-28 px-6 gap-16 overflow-hidden"
     >
       <Title />
       <div class="w-full flex flex-row justify-center align-center">
         <div class="flex flex-col lg:flex-row gap-10 max-w-[1000px]">
           <div class="flex flex-col w-full lg:w-1/3 gap-4 text-left">
-            <p class="font-primary text-lg lg:text-[2rem]">Designed for You</p>
+            <p class="font-primary text-lg lg:text-[2rem] lg:leading-9 tracking-[3px] lg:tracking-[5.5px]">
+              Designed for You
+            </p>
             <p class="text-font-lighter text-base font-bold">
-              Cohere’s Command lets you build powerful chatbots and knowledge
-              assistants. Command uses RAG (Retrieval Augmented Generation) to
-              deliver accurate conversations grounded by your enterprise data.
+              Cromzz is your ultimate fitness companion. Equip yourself with
+              metrics and support for peak performance or unlock invaluable
+              client insights if you are a trainer.
             </p>
           </div>
           <div class="flex w-full lg:w-1/3 align-center justify-center">
@@ -77,12 +83,12 @@ const Discover = () => {
               <img
                 src={phoneImage}
                 alt="Cromzz on phone"
-                class="object-contain"
+                class="object-contain z-1"
               ></img>
               <img
                 src={deviceImage}
                 alt="Device"
-                class="absolute bottom-[-50px] left-[-75px] md:left-[-100px] object-contain"
+                class="absolute bottom-[-50px] left-[-60px] sm:left-[-75px] md:left-[-100px] object-contain z-1"
               />
             </div>
           </div>
@@ -95,18 +101,13 @@ const Discover = () => {
                 </p>
               </div>
             ))}
-            <div class="flex flex-row w-full">
-              <button class="bg-font-lighter transparent text-[#070421] text-sm font-bold py-2 rounded cut-right">
-                Waiting list
-              </button>
-              <button class="bg-font-lighter flex align-center justify-end text-smfont-bold py-2 pr-4 rounded cut-left">
-                <img
-                  src={arrowRightBlack}
-                  class="h-4 color-[#070421]"
-                  alt="Arrow"
-                />
-              </button>
-            </div>
+            <Button
+              text="Waiting list"
+              styles={
+                'bg-font-lighter transparent text-sm text-[#070421] text-left font-bold py-2 px-4 rounded flex flex-row w-full items-center justify-between'
+              }
+              iconImage={arrowRightBlack}
+            />
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@ const Discover = () => {
           header={'PROFESSIONAL'}
           title={'Personal Trainers'}
           description={
-            'Cohere’s Command lets you build powerful chatbots and knowledge assistants. Command uses RAG (Retrieval Augmented Generation) to deliver accurate conversations grounded by your enterprise data.'
+            'Connect, track, and simplify with our Personal Trainer app. Seamlessly link trainers with clients, empower trainers to monitor gym activity for improved guidance and progress tracking, while simplifying client management through easy session scheduling.'
           }
         />
 
@@ -125,12 +126,12 @@ const Discover = () => {
           header={'HOBBY'}
           title={'Trainees'}
           description={
-            'Cohere’s Command lets you build powerful chatbots and knowledge assistants. Command uses RAG (Retrieval Augmented Generation) to deliver accurate conversations grounded by your enterprise data.'
+            'Empower your fitness journey with personalized metrics for progress tracking and goal setting. Engage in friendly competition with gamification features. Discover the perfect personal trainer matched to your unique fitness aspirations through our app.'
           }
         />
       </div>
-      <p class="text-font-lighter text-base text-light tracking-[0.25rem]">
-        Wearable on your hands and shoes for comfort and performance
+      <p class="text-font-lighter text-base font-light	 tracking-[2.7px]">
+        Wearable on your equipment for comfort and performance
       </p>
     </div>
   )

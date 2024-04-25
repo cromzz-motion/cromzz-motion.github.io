@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Button from './Button'
 import arrowRightBlack from '../assets/img/icons/arrow-right-black.png'
 
 const Title = () => {
   return (
-    <p class="font-primary text-3xl lg:text-[42px] font-light tracking-[0.17em]">
+    <p class="font-primary  text-2xl tracking-[4px] text-center lg:text-[42px] lg:tracking-[7px] font-light ">
       Contact us:
     </p>
   )
@@ -55,18 +55,14 @@ const Contact = () => {
               placeholder="Your message (optional)"
             />
           </div>
-          <div class="flex flex-row w-full">
-            <button class="bg-font-lighter transparent text-[#070421] text-sm font-bold py-2 rounded cut-right">
-              Submit
-            </button>
-            <button class="bg-font-lighter flex align-center justify-end text-smfont-bold py-2 pr-2 rounded cut-left">
-              <img
-                src={arrowRightBlack}
-                class="h-4 color-[#070421]"
-                alt="Arrow"
-              />
-            </button>
-          </div>
+
+          <Button
+            text="Submit"
+            styles={
+              'bg-font-lighter transparent text-sm text-[#070421] text-left font-bold py-2 px-4 rounded flex flex-row items-center justify-between w-full'
+            }
+            iconImage={arrowRightBlack}
+          />
         </div>
         <div class="flex flex-col gap-10 border border-white rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none px-4 py-8">
           <div class="w-full flex flex-col gap-2">
