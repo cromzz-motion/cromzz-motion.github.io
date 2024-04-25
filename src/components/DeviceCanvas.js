@@ -4,13 +4,13 @@ import { useGLTF, OrbitControls } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const Scene = () => {
-  const device = useGLTF('/device.gltf')
+  const device = useGLTF('/device_mai_inchis.gltf')
   const axisRef = useRef()
   const deviceRef = useRef()
 
   useEffect(() => {
     const loader = new GLTFLoader()
-    loader.load('/device.gltf', (gltf) => {
+    loader.load('/device_mai_inchis.gltf', (gltf) => {
       console.log(gltf) // Log the loaded model
 
       deviceRef.current = gltf.scene
