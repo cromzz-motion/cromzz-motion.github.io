@@ -2,14 +2,16 @@ import './App.css'
 import Contact from './components/Contact'
 import Discover from './components/Discover'
 import Evolution from './components/Evolution'
+import Header from './components/Header2'
 
 import Hero from './components/Hero'
 
 function App() {
   return (
-    <div className="App" class="bg-background-main">
+    <div className="App bg-background-main">
+      <Header />
       <Hero />
-      <div class="px-4">
+      <div className="px-4">
         <Discover />
         <Evolution />
         <Contact />

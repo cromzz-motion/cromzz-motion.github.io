@@ -10,6 +10,10 @@
   }
 }
 
+html {
+  background-color: #210940;
+}
+
 body {
   margin: 0;
   font-family: 'Sansation', sans-serif;
