@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb4c3ea3.css",
-    "main.js": "/static/js/main.fa1da632.js",
+    "main.css": "/static/css/main.9f9a7000.css",
+    "main.js": "/static/js/main.d2bd1318.js",
     "static/js/453.5eaaa0a9.chunk.js": "/static/js/453.5eaaa0a9.chunk.js",
     "static/media/hero.png": "/static/media/hero.4f602335d7065cf9620d.png",
+    "static/media/elipse-1.png": "/static/media/elipse-1.9dae646903a97b44de10.png",
     "static/media/training-2.png": "/static/media/training-2.2b910151cb47b7736af8.png",
     "static/media/training-1.png": "/static/media/training-1.fd12e2e9e1ca7aa683a1.png",
     "static/media/phone-image.png": "/static/media/phone-image.fdc11efdb05af56b33bf.png",
@@ -13,12 +14,12 @@
     "static/media/close.svg": "/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
     "static/media/menu.svg": "/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "index.html": "/index.html",
-    "main.fb4c3ea3.css.map": "/static/css/main.fb4c3ea3.css.map",
-    "main.fa1da632.js.map": "/static/js/main.fa1da632.js.map",
+    "main.9f9a7000.css.map": "/static/css/main.9f9a7000.css.map",
+    "main.d2bd1318.js.map": "/static/js/main.d2bd1318.js.map",
     "453.5eaaa0a9.chunk.js.map": "/static/js/453.5eaaa0a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb4c3ea3.css",
-    "static/js/main.fa1da632.js"
+    "static/css/main.9f9a7000.css",
+    "static/js/main.d2bd1318.js"
   ]
 }
