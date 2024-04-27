@@ -79,11 +79,6 @@ const Discover = () => {
             </p>
           </div>
           <div className="flex w-full lg:w-1/3 align-center justify-center">
-            <img
-              src={elipse}
-              alt="Cromzz on phone"
-              className="object-contain z-0 absolute top-[0] left-[15%]"
-            />
             <div className="relative z-10">
               <img
                 src={phoneImage}
@@ -121,11 +116,6 @@ const Discover = () => {
         </div>
       </div>
       <div className="w-full relative">
-        <img
-          src={elipse}
-          alt="Cromzz on phone"
-          className="object-contain z-0 absolute top-[7%] left-[5%]"
-        />
         <div className="w-full flex flex-col justify-center items-center gap-10 relative z-10">
           <Card
             image={training1}

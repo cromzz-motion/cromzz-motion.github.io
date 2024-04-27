@@ -34,11 +34,6 @@ const Contact = () => {
       id="waiting-list"
       className="flex flex-col w-full items-center justify-center py-10 relative"
     >
-      <img
-        src={elipse}
-        alt="Cromzz on phone"
-        className="object-contain z-0 absolute h-full w-full top-[0] left-[0]"
-      />
       <div className="flex flex-col md:flex-row w-full max-w-[490px] md:max-w-[1000px] gap-0 ">
         <div className="flex flex-col gap-10 border border-white rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none px-4 py-8 z-10">
           <Title />
