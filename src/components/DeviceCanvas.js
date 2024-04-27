@@ -5,7 +5,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const Scene = () => {
   const device = useGLTF('/device_mai_inchis.gltf')
-  const axisRef = useRef()
   const deviceRef = useRef()
 
   useEffect(() => {

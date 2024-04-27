@@ -10,7 +10,7 @@ const Hero = () => (
     >
       <DeviceCanvas />
       <div className="absolute flex items-center right-[1rem] py-8 h-full z-0">
-        <img src={cromzz} className="h-3/4 md:h-full" />
+        <img src={cromzz} className="h-3/4 md:h-full" alt={''} />
       </div>
     </div>
   </>
