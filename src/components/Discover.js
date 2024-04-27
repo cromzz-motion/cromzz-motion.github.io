@@ -15,6 +15,7 @@ import Button from './Button'
 
 import training1 from '../assets/img/training-1.png'
 import training2 from '../assets/img/training-2.png'
+import elipse from '../assets/img/elipse-1.png'
 
 const features = [
   {
@@ -67,7 +68,7 @@ const Discover = () => {
       <Title />
       <div className="w-full flex flex-row justify-center align-center">
         <div className="flex flex-col lg:flex-row gap-10 max-w-[1000px]">
-          <div className="flex flex-col w-full lg:w-1/3 gap-4 text-left">
+          <div className="flex flex-col w-full lg:w-1/3 gap-4 text-left z-10">
             <p className="font-primary text-lg lg:text-[2rem] lg:leading-9 tracking-[3px] lg:tracking-[5.5px]">
               Designed for You
             </p>
@@ -78,7 +79,12 @@ const Discover = () => {
             </p>
           </div>
           <div className="flex w-full lg:w-1/3 align-center justify-center">
-            <div className="relative">
+            <img
+              src={elipse}
+              alt="Cromzz on phone"
+              className="object-contain z-0 absolute top-[0] left-[15%]"
+            />
+            <div className="relative z-10">
               <img
                 src={phoneImage}
                 alt="Cromzz on phone"
@@ -91,7 +97,7 @@ const Discover = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-full lg:w-1/3">
+          <div className="flex flex-col gap-4 w-full lg:w-1/3 z-10">
             {features.map((feature) => (
               <div className="flex flex-row gap-4">
                 <img
@@ -114,24 +120,31 @@ const Discover = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-10">
-        <Card
-          image={training1}
-          title={'Personal Trainers'}
-          description={
-            'Connect, track, and simplify with our Personal Trainer app. Seamlessly link trainers with clients, empower trainers to monitor gym activity for improved guidance and progress tracking, while simplifying client management through easy session scheduling.'
-          }
+      <div className="w-full relative">
+        <img
+          src={elipse}
+          alt="Cromzz on phone"
+          className="object-contain z-0 absolute top-[7%] left-[5%]"
         />
+        <div className="w-full flex flex-col justify-center items-center gap-10 relative z-10">
+          <Card
+            image={training1}
+            title={'Personal Trainers'}
+            description={
+              'Connect, track, and simplify with our Personal Trainer app. Seamlessly link trainers with clients, empower trainers to monitor gym activity for improved guidance and progress tracking, while simplifying client management through easy session scheduling.'
+            }
+          />
 
-        <Card
-          image={training2}
-          title={'Trainees'}
-          description={
-            'Empower your fitness journey with personalized metrics for progress tracking and goal setting. Engage in friendly competition with gamification features. Discover the perfect personal trainer matched to your unique fitness aspirations through our app.'
-          }
-        />
+          <Card
+            image={training2}
+            title={'Trainees'}
+            description={
+              'Empower your fitness journey with personalized metrics for progress tracking and goal setting. Engage in friendly competition with gamification features. Discover the perfect personal trainer matched to your unique fitness aspirations through our app.'
+            }
+          />
+        </div>
       </div>
-      <p className="text-font-lighter text-base font-light	 tracking-[2.7px]">
+      <p className="text-font-lighter text-base font-light	z-10 tracking-[2.7px]">
         Wearable on your equipment for comfort and performance
       </p>
     </div>

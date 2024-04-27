@@ -2,6 +2,8 @@ import React from 'react'
 import Button from './Button'
 import arrowRightBlack from '../assets/img/icons/arrow-right-black.png'
 
+import elipse from '../assets/img/elipse-1.png'
+
 const Title = () => {
   return (
     <p className="font-primary text-2xl tracking-[4px] text-center lg:text-[42px] lg:tracking-[7px] lg:leading-10 font-light">
@@ -30,10 +32,15 @@ const Contact = () => {
   return (
     <div
       id="waiting-list"
-      className="flex flex-col w-full items-center justify-center py-10"
+      className="flex flex-col w-full items-center justify-center py-10 relative"
     >
-      <div className="flex flex-col md:flex-row w-full max-w-[490px] md:max-w-[1000px] gap-0">
-        <div className="flex flex-col gap-10 border border-white rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none px-4 py-8">
+      <img
+        src={elipse}
+        alt="Cromzz on phone"
+        className="object-contain z-0 absolute h-full w-full top-[0] left-[0]"
+      />
+      <div className="flex flex-col md:flex-row w-full max-w-[490px] md:max-w-[1000px] gap-0 ">
+        <div className="flex flex-col gap-10 border border-white rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none px-4 py-8 z-10">
           <Title />
 
           <div className="w-full flex flex-col gap-4">
